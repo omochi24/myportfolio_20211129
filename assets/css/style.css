@@ -199,7 +199,7 @@ li {
 }
 
 .works {
-  background-image: url("/assets/img/works-bgi@2x.jpg");
+  background-image: url("../img/works-bgi@2x.jpg");
   background-size: cover;
   text-align: center;
   padding-bottom: 70px;
@@ -325,7 +325,7 @@ li {
 }
 
 .contact {
-  background-image: url("/assets/img/contact-bgi@2x.jpg");
+  background-image: url("../img/contact-bgi@2x.jpg");
   background-size: cover;
   padding-bottom: 70px;
 }
