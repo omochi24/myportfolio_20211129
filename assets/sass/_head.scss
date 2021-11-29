@@ -1,0 +1,48 @@
+$top-text-color: #282F35;
+$bottom-text-color-r: #171717;
+$color-white: #fff;
+
+@mixin sec-title($color, $position, $padding-top: 0) {
+
+    .sec-title {
+        color: $color;
+        font-size: 3.75rem;
+        font-style: italic;
+        text-align: $position;
+        padding-top: $padding-top;
+    
+        &::after {
+            content: "――――";
+            padding-left: 2rem;
+        }
+    }
+    
+}
+
+@mixin bottom-text($color, $position, $padding-top:70px) {
+
+    .bottom-text {
+        color: rgba($color, 0.05);
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: $position;
+        padding-top: $padding-top;
+        line-height: 1.67;
+    }
+
+}
+
+@mixin f-box($f-style, $f-weight, $f-size, $f-height, $f-color:#000) {
+    font-style: $f-style;
+    font-weight: $f-weight;
+    font-size: $f-size;
+    line-height: $f-height;
+    color: $f-color;
+}
+
+// レスポンシブ
+@mixin mq($max-width: 720px) {
+    @media(max-width: $max-width) {
+        @content;
+    }
+}

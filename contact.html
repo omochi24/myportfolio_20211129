@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cresta Design</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap” rel=“stylesheet”>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+
+</head>
+<body>
+    <header class="header contact-header">
+        <div class="inner header-wrap">
+            <h1 class="logo"><a href="/index.html">Cresta Design</a></h1>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Concept</a></li>
+                    <li class="nav-item"><a href="#">Service</a></li>
+                    <li class="nav-item"><a href="#">Works</a></li>
+                    <li class="nav-item"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.inner -->
+    </header>
+
+    <div class="contact-top">
+        <h2 class="title">Contact</h2>
+        <p class="bottom-text">Contact us</p>
+    </div>
+
+    <main class="contact-form">
+        <div class="form-wrap">
+            <form action="#">
+                <div class="form-item">
+                    <label for="inquiry">お問い合わせ内容</label>
+                    <div>
+                        <input type="checkbox" name="inquiry" id="inquiry" value="1">
+                        <label for="claim" class="check-label">資料請求</label>
+                        <input type="checkbox" name="inquiry" id="inquiry" value="2">
+                        <label for="tel-consul" class="check-label">お電話でのご相談を希望</label>
+                        <input type="checkbox" name="inquiry" id="inquiry" value="3">
+                        <label for="app" class="check-label">申し込み</label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="name">担当者名</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-item">
+                    <label for="tel">電話番号</label>
+                    <input type="tel" id="tel">
+                </div>
+                <div class="form-item">
+                    <label for="emial">メールアドレス</label>
+                    <input type="email" id="emial">
+                </div>
+                <div class="form-item">
+                    <label for="other">その他</label>
+                    <textarea id="other" cols="30" rows="10"></textarea>
+                </div>
+                <div class="sub-wrap">
+                    <button class="y-btn">
+                        <input type="submit" value="Submit">
+                    </button>
+                </div><!-- /.submit -->
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <small>©︎cresta.design all rights reserved</small>
+    </footer>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
