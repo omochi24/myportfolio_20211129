@@ -16,20 +16,20 @@ $(function () {
     $('.header').each(function() {
         var $win = $(window), //ウィンドウオブジェクト
             $header = $(this), // ヘッダーオブジェクト
-            $concept = $('.concept'); // conceptオブジェクト
-            // headerOffsetTop = $header.offset().top; //ヘッダーの位置
+            fvHeight = $('.fv').outerHeight(); // ヘッダーのbottom位置
         
         $win.on('scroll', function() {
-            console.log($concept.offset().top);
-            console.log($win.scrollTop());
-            if($win.scrollTop() > $concept.offset().top) {
+            if($win.scrollTop() > fvHeight) {
                 $header.addClass('sticky');
             }
             else {
                 $header.removeClass('sticky');
             }
-
-
         });
+    });
+
+    // ハンバーガーメニュー
+    $('.js-hum-btn').on('click', function() {
+        $('.nav-list, .hum-btn-line').toggleClass('open');
     });
 });
